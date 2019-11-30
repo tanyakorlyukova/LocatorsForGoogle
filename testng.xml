@@ -2,9 +2,9 @@
 <suite name="Locators">
     <test name="Test Google locators">
         <classes>
-          <!--  <class name="GoogleExample" />-->
+            <class name="GoogleExample" />
             <class name="CssLocators" />
-         <!--   <class name="XPathLocators" />-->
+            <class name="XPathLocators" />
         </classes>
     </test>
 </suite>

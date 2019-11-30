@@ -15,6 +15,8 @@ public class CssLocators extends BaseClass{
 
     @Test
     public void findCSSLocators() {
+        System.out.println("\"Find CSS locators\" test is running.");
+
         //по ID элемента
         By singInButton = By.cssSelector("#gb_70");
         driver.findElement(singInButton).click();
