@@ -43,7 +43,7 @@ public class GoogleExample extends BaseClass{
     @Test
     public void usingXpath() {
         By filterDropdown = By.xpath("//div[contains(@class, 'hdtb-mn-hd') and @aria-label='Тип']");
-        waitForElement(filterDropdown);
+        waitForElement(filterDropdown, 10);
 
         WebElement filterByType = driver.findElement(filterDropdown);
         filterByType.click();
@@ -58,7 +58,7 @@ public class GoogleExample extends BaseClass{
     @Test
     public void usingCSS() {
         By filterDropdown = By.cssSelector(".hdtb-mn-hd[aria-label='Тип']");
-        waitForElement(filterDropdown);
+        waitForElement(filterDropdown, 15);
 
         WebElement filterByType = driver.findElement(filterDropdown);
         filterByType.click();
